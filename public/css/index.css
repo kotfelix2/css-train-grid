@@ -1,61 +1,80 @@
 .task1 {
+  display: grid;
 }
 
 .task2 {
+  display: grid;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 .task3 {
   display: grid;
+  gap: 10px;
+  row-gap: 25px;
 }
 
 .task4 {
   display: grid;
 }
 .task4 .item2 {
+  order: 4;
 }
 .task4 .item4 {
+  order: 3;
 }
 .task4 .item3 {
+  order: 5;
 }
 
 .task5 {
   display: grid;
+  justify-content: start;
 }
 
 .task6 {
   display: grid;
+  justify-content: flex-end;
 }
 
 .task7 {
   display: grid;
+  justify-content: center;
 }
 
 .task8 {
   display: grid;
+  justify-content: space-between;
 }
 
 .task9 {
   display: grid;
+  justify-content: space-around;
 }
 
 .task10 {
   display: grid;
+  justify-content: space-evenly;
 }
 
 .task11 {
   display: grid;
+  align-items: start;
 }
 
 .task12 {
   display: grid;
+  align-content: flex-start;
 }
 
 .task13 {
   display: grid;
+  align-content: end;
 }
 
 .task14 {
   display: grid;
+  align-content: center;
 }
 
 .task15 {
@@ -64,30 +83,37 @@
 
 .task16 {
   display: grid;
+  align-content: space-between;
 }
 
 .task17 {
   display: grid;
+  align-content: space-around;
 }
 
 .task18 {
   display: grid;
+  align-content: space-evenly;
 }
 
 .task19 {
   display: grid;
+  align-content: center;
 }
 
 .task20 {
   display: grid;
+  justify-items: start;
 }
 
 .task21 {
   display: grid;
+  justify-items: end;
 }
 
 .task22 {
   display: grid;
+  justify-items: center;
 }
 
 .task23 {
@@ -96,14 +122,17 @@
 
 .task24 {
   display: grid;
+  align-items: start;
 }
 
 .task25 {
   display: grid;
+  align-items: end;
 }
 
 .task26 {
   display: grid;
+  align-items: center;
 }
 
 .task27 {
@@ -112,88 +141,110 @@
 
 .task28 {
   display: grid;
+  align-items: baseline;
 }
 
 .task29 {
   display: grid;
+  justify-items: baseline;
 }
 
 .task30 {
   display: grid;
 }
 .task30 .item1 {
+  justify-self: start;
 }
 
 .task31 {
   display: grid;
 }
 .task31 .item2 {
+  justify-self: end;
 }
 
 .task32 {
   display: grid;
 }
 .task32 .item3 {
+  justify-self: center;
 }
 
 .task33 {
   display: grid;
 }
 .task33 .item4 {
+  justify-self: stretch;
 }
 
 .task34 {
   display: grid;
 }
 .task34 .item1 {
+  align-self: baseline;
 }
 
 .task35 {
   display: grid;
 }
 .task35 .item2 {
+  align-self: last baseline;
 }
 
 .task36 {
   display: grid;
 }
 .task36 .item3 {
+  align-self: center;
 }
 
 .task37 {
   display: grid;
 }
 .task37 .item4 {
+  align-self: stretch;
 }
 
 .task38 {
   display: grid;
 }
 .task38 .item5 {
+  align-self: center;
+  justify-self: start;
 }
 
 .task39 {
   display: grid;
+  grid-template-rows: 1fr 2fr 3fr;
 }
 
 .task40 {
   display: grid;
+  grid-template-columns: 30% 70%;
+
 }
 
 .task41 {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  line-height: 100px;
+  grid-row: 30%;
 }
 
 .task42 {
   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
 }
 .task42 .item1 {
+  grid-row: 1 / 3;
 }
 .task42 .item2 {
 }
 .task42 .item3 {
 }
 .task42 .item4 {
+  grid-row: 3 / 5;
 }
 .task42 .item5 {
 }
@@ -204,44 +255,59 @@
   display: grid;
 }
 .task43 .item3 {
+  grid-column: 1 / 3;
 }
 
 .task44 {
   display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .task44 .item3 {
+  grid-row: 1 / 3;
+  grid-column: 1 / 2;
 }
 
 .task45 {
   display: grid;
 }
 .task45 .item3 {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
 }
 
 .task46 {
   display: grid;
+  grid-template-columns: min-content max-content;
 }
 
 .task47 {
   display: grid;
+  grid-template-rows: min-content;
 }
 
 .task48 {
   display: grid;
 }
 
-.task50 {
-  display: grid;
-}
-
 .task49 {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column dense;
+}
+
+.task50 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
 }
 
 .task51 {
   display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-width: 100px;
 }
 
 .task52 {
   display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
